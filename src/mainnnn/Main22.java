@@ -9,17 +9,10 @@ public class Main22 {
         ArrayList<Integer> b = new ArrayList<>();
         LinkedList<Integer> c = new LinkedList<>();
         for (int i = 0; i < a.length; i++) {
-            a[i] = random.nextInt(0, 2);
+            a[i]= random.nextInt(0,2);
+            b.add(random.nextInt(0,2));
+            c.add(random.nextInt(0,2));
         }
-
-        for (int i = 0; i < 10; i++) {
-            b.add(random.nextInt(0, 2));
-        }
-
-        for (int i = 0; i < 10; i++) {
-            c.add(random.nextInt(0, 2));
-        }
-
         System.out.println(Arrays.toString(sort(a)));
         System.out.println(sort(b));
         System.out.println(sort(c));
@@ -34,7 +27,6 @@ public class Main22 {
         Collections.sort(a);
         return a;
     }
-
     public static LinkedList<Integer> sort(LinkedList<Integer> a) {
         Collections.sort(a);
         return a;
